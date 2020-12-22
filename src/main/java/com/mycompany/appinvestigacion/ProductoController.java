@@ -118,7 +118,7 @@ public class ProductoController implements Initializable {
         this.cmbIva.getSelectionModel().selectFirst();
 
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_investigacion", "admin", "12345");
+            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/proyecto_investigacion", "admin", "123456");
         } catch (SQLException ex) {
             LOG.log(Level.SEVERE, "Error al conectar a la base de datos", ex);
             Alert al = new Alert(AlertType.INFORMATION);
